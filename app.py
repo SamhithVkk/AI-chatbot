@@ -39,6 +39,8 @@ def main():
                     st.write("Sorry, I could not understand the audio.")
                 except sr.RequestError as e:
                     st.write(f"Could not request results; {e}")
+    else:
+        st.write("Voice recognition is not available.")
 
 if __name__ == "__main__":
     main()
